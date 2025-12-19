@@ -45,3 +45,12 @@ jobs:
       - name: Build frontend
         working-directory: Student-Frontend
         run: npm run build
+
+  deploy:
+    name: Deploy (placeholder)
+    needs: [backend, frontend]
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deployment step
+        run: echo "CI passed. Ready to deploy 🚀"
